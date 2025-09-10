@@ -1,0 +1,14 @@
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\bin\Debug\net8.0\FileStream_BaghdadTask.exe
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\bin\Debug\net8.0\FileStream_BaghdadTask.deps.json
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\bin\Debug\net8.0\FileStream_BaghdadTask.runtimeconfig.json
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\bin\Debug\net8.0\FileStream_BaghdadTask.dll
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\bin\Debug\net8.0\FileStream_BaghdadTask.pdb
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\obj\Debug\net8.0\FileStream_BaghdadTask.GeneratedMSBuildEditorConfig.editorconfig
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\obj\Debug\net8.0\FileStream_BaghdadTask.AssemblyInfoInputs.cache
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\obj\Debug\net8.0\FileStream_BaghdadTask.AssemblyInfo.cs
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\obj\Debug\net8.0\FileStream_BaghdadTask.csproj.CoreCompileInputs.cache
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\obj\Debug\net8.0\FileStream_BaghdadTask.dll
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\obj\Debug\net8.0\refint\FileStream_BaghdadTask.dll
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\obj\Debug\net8.0\FileStream_BaghdadTask.pdb
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\obj\Debug\net8.0\FileStream_BaghdadTask.genruntimeconfig.cache
+E:\Problems_Solver_Bootcamp\VS_projects\FileStream_BaghdadTask\obj\Debug\net8.0\ref\FileStream_BaghdadTask.dll
