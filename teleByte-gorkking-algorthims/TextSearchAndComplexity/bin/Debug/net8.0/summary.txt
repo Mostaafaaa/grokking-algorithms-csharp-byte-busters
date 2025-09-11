@@ -1,0 +1,4 @@
+Overall Time Complexity per file:
+                 - O(m*k + W log W) 
+                  where m = lines per file, k = words per line, W = total words in file (≈ m*k)
+                 - For n files: O(n * (m*k + W log W))
