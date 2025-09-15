@@ -32,7 +32,6 @@ namespace BinarySearch
                     right = mid - 1;
             }
 
-            // Closest index 
             return left < list.Count ? left : -1;
         }
     }

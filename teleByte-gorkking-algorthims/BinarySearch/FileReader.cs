@@ -37,7 +37,6 @@ namespace BinarySearch
                 return new List<T>();
             }
         }
-
         public static List<Transaction> LoadTransaction(string FilePath)
         {
             if (!File.Exists(FilePath))
@@ -47,7 +46,6 @@ namespace BinarySearch
             }
 
             string json = File.ReadAllText(FilePath);
-
             try
             {
                 List<Transaction>? Transactions = JsonSerializer.Deserialize<List<Transaction>>(json);

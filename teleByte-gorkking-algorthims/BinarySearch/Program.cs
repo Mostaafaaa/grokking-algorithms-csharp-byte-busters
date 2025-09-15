@@ -1,6 +1,8 @@
 ﻿
 
 using BinarySearch;
+using System;
+using System.Security.Cryptography;
 
 class Program
 {
@@ -8,9 +10,9 @@ class Program
     {
         int ValueTime = 10;
 
-        int[] Time = new int[1000];
+        int[] Time = new int[100];
 
-        for (int i = 0; i < 1000; i++)
+        for (int i = 0; i < 100;  i++)
         {
             Time[i] = ValueTime;
             ValueTime += 15;
@@ -38,7 +40,13 @@ class Program
                 case "1":
                     Console.Write("Enter Time e.g (10, 25, 40 .. etc)\nTime: ");
                     int Taraget = int.Parse(Console.ReadLine());
-                    BinarySearchHelper.BinarySearchOrClosest(Time, Taraget);
+                    Console.WriteLine();
+                    int tr = BinarySearchHelper.BinarySearchOrClosest(Time, Taraget);
+                    if (tr != -1)
+                    {
+                        Console.WriteLine("Delivery Target Not found..");
+                        Console.WriteLine($"Next Delivery Target: {Time[tr]} on index {tr}\n");
+                    }
                     break;
                 case "2":
                     if (transactions.Count == 0)
@@ -52,7 +60,9 @@ class Program
                         int index = Transaction.BinarySearchByDate(transactions, targetDate);
                         if (index != -1)
                         {
-                            Console.WriteLine($"Closest Transaction: {transactions[index].TransactionID} on {transactions[index].Date:yyyy-MM-dd}, Amount: {transactions[index].Amount}, Type: {transactions[index].Type}\n");
+                            Console.WriteLine($"Closest Transaction: {transactions[index].TransactionID} on {transactions[index].Date:yyyy-MM-dd} \n" +
+                                $"Amount: {transactions[index].Amount}$\n" +
+                                $"Type: {transactions[index].Type}\n");
                         }
                         else
                         {
@@ -78,7 +88,10 @@ class Program
                     int bookIndex = Book.BinarySearchByISBN(books, targetISBN);
                     if (bookIndex != -1)
                     {
-                        Console.WriteLine($"Closest Book: {books[bookIndex].Title} (ISBN: {books[bookIndex].ISBN}), Author: {books[bookIndex].Author}, Year: {books[bookIndex].Year}\n");
+                        Console.WriteLine($"Closest Book: {books[bookIndex].Title}\n" +
+                            $"(ISBN: {books[bookIndex].ISBN})\n" +
+                            $"Author: {books[bookIndex].Author}\n" +
+                            $"Year: {books[bookIndex].Year}\n");
                     }
                     else
                     {
