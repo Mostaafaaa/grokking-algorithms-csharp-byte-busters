@@ -27,7 +27,7 @@ namespace BinarySearch
                 if (list == null)
                     return new List<T>();
 
-                Console.WriteLine($"Loaded {list.Count} users from {Path.GetFileName(FilePath)}\n");
+                Console.WriteLine($"Loaded {list.Count} from {Path.GetFileName(FilePath)}\n");
                 
                 return list;
             }
@@ -35,31 +35,6 @@ namespace BinarySearch
             {
                 Console.WriteLine($"\nError loading file.json: {ex.Message}");
                 return new List<T>();
-            }
-        }
-        public static List<Transaction> LoadTransaction(string FilePath)
-        {
-            if (!File.Exists(FilePath))
-            {
-                Console.WriteLine("\njson file not found. Returning empty list");
-                return new List<Transaction>();
-            }
-
-            string json = File.ReadAllText(FilePath);
-            try
-            {
-                List<Transaction>? Transactions = JsonSerializer.Deserialize<List<Transaction>>(json);
-                if (Transactions == null)
-                    return new List<Transaction>();
-
-                Console.WriteLine($"Loaded {Transactions.Count}  from {FilePath}\n");
-
-                return Transactions;
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine($"\nError loading file.json: {ex.Message}");
-                return new List<Transaction>();
             }
         }
     }

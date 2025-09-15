@@ -9,7 +9,7 @@ namespace BinarySearch
 {
     internal class BinarySearchHelper
     {
-        public static int BinarySearchOrClosest(int[] sortedArray, int Taraget)
+        public static int DileveryTimeSearchOrAfter(int[] sortedArray, int Taraget)
         {
             int low = 0;
             int high = sortedArray.Length - 1;

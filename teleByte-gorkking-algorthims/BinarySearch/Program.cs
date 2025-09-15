@@ -41,7 +41,7 @@ class Program
                     Console.Write("Enter Time e.g (10, 25, 40 .. etc)\nTime: ");
                     int Taraget = int.Parse(Console.ReadLine());
                     Console.WriteLine();
-                    int tr = BinarySearchHelper.BinarySearchOrClosest(Time, Taraget);
+                    int tr = BinarySearchHelper.DileveryTimeSearchOrAfter(Time, Taraget);
                     if (tr != -1)
                     {
                         Console.WriteLine("Delivery Target Not found..");
