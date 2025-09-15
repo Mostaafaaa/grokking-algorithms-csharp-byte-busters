@@ -1,0 +1,122 @@
+[
+    {
+        "TransactionID": "T0001",
+        "Date": "2025-01-04",
+        "Amount": 611.44,
+        "Type": "Transfer"
+    },
+    {
+        "TransactionID": "T0002",
+        "Date": "2025-01-07",
+        "Amount": 935.83,
+        "Type": "Deposit"
+    },
+    {
+        "TransactionID": "T0003",
+        "Date": "2025-01-10",
+        "Amount": 658.34,
+        "Type": "Withdrawal"
+    },
+    {
+        "TransactionID": "T0004",
+        "Date": "2025-01-13",
+        "Amount": 406.85,
+        "Type": "Transfer"
+    },
+    {
+        "TransactionID": "T0005",
+        "Date": "2025-01-16",
+        "Amount": 160.08,
+        "Type": "Deposit"
+    },
+    {
+        "TransactionID": "T0006",
+        "Date": "2025-01-19",
+        "Amount": 398.52,
+        "Type": "Withdrawal"
+    },
+    {
+        "TransactionID": "T0007",
+        "Date": "2025-01-22",
+        "Amount": 86.59,
+        "Type": "Deposit"
+    },
+    {
+        "TransactionID": "T0008",
+        "Date": "2025-01-25",
+        "Amount": 631.16,
+        "Type": "Deposit"
+    },
+    {
+        "TransactionID": "T0009",
+        "Date": "2025-01-28",
+        "Amount": 203.03,
+        "Type": "Transfer"
+    },
+    {
+        "TransactionID": "T0010",
+        "Date": "2025-01-31",
+        "Amount": 782.36,
+        "Type": "Deposit"
+    },
+    {
+        "TransactionID": "T0011",
+        "Date": "2025-02-03",
+        "Amount": 260.44,
+        "Type": "Withdrawal"
+    },
+    {
+        "TransactionID": "T0012",
+        "Date": "2025-02-06",
+        "Amount": 883.84,
+        "Type": "Withdrawal"
+    },
+    {
+        "TransactionID": "T0013",
+        "Date": "2025-02-09",
+        "Amount": 880.92,
+        "Type": "Deposit"
+    },
+    {
+        "TransactionID": "T0014",
+        "Date": "2025-02-12",
+        "Amount": 101.55,
+        "Type": "Withdrawal"
+    },
+    {
+        "TransactionID": "T0015",
+        "Date": "2025-02-15",
+        "Amount": 566.82,
+        "Type": "Transfer"
+    },
+    {
+        "TransactionID": "T0016",
+        "Date": "2025-02-18",
+        "Amount": 673.38,
+        "Type": "Withdrawal"
+    },
+    {
+        "TransactionID": "T0017",
+        "Date": "2025-02-21",
+        "Amount": 605.67,
+        "Type": "Withdrawal"
+    },
+    {
+        "TransactionID": "T0018",
+        "Date": "2025-02-24",
+        "Amount": 584.6,
+        "Type": "Transfer"
+    },
+    {
+        "TransactionID": "T0019",
+        "Date": "2025-02-27",
+        "Amount": 292.71,
+        "Type": "Transfer"
+    },
+    {
+        "TransactionID": "T0020",
+        "Date": "2025-03-02",
+        "Amount": 792.95,
+        "Type": "Deposit"
+    }
+]
