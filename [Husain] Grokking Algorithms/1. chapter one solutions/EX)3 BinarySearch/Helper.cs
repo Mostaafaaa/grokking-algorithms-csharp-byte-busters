@@ -7,95 +7,100 @@ namespace BinarySearch;
 
 public class Helper
 {
-    public static void SearchOrCloseTo(int Target, int[] SortedArrayOfNumbers)
-    {
+
+    //public static void SearchOrCloseTo(int Target, int[] SortedArrayOfNumbers)
+    //{
 
 
 
-        foreach (int i in SortedArrayOfNumbers)
-        {
-            Console.WriteLine(i);
-        }
+    //    foreach (int i in SortedArrayOfNumbers)
+    //    {
+    //        Console.WriteLine(i);
+    //    }
 
-        int High = SortedArrayOfNumbers.Count() - 1;
-        int Low = 0;
-        int Right = 0;
-        int Left = 0;
+    //    int High = SortedArrayOfNumbers.Count() - 1;
+    //    int Low = 0;
+    //    int Right = 0;
+    //    int Left = 0;
 
-        while (High >= Low)
-        {
-            int Mid = (Low + High) / 2;
+    //    while (High >= Low)
+    //    {
+    //        int Mid = (Low + High) / 2;
 
-            if (Target == SortedArrayOfNumbers[Mid])
-            {
-                Console.WriteLine($"We have Found the Target {SortedArrayOfNumbers[Mid]} and it's index is {Mid}");
-                break;
-            }
+    //        if (Target == SortedArrayOfNumbers[Mid])
+    //        {
+    //            Console.WriteLine($"We have Found the Target {SortedArrayOfNumbers[Mid]} and it's index is {Mid}");
+    //            break;
+    //        }
 
 
-            else if (Target > SortedArrayOfNumbers[Mid])
-            {
-                Low = Mid + 1;
-                Left = SortedArrayOfNumbers[Mid];
-            }
-            else
-            {
-                High = Mid - 1;
-                Right = SortedArrayOfNumbers[Mid];
-            }
+    //        else if (Target > SortedArrayOfNumbers[Mid])
+    //        {
+    //            Low = Mid + 1;
+    //            Left = SortedArrayOfNumbers[Mid];
+    //        }
+    //        else
+    //        {
+    //            High = Mid - 1;
+    //            Right = SortedArrayOfNumbers[Mid];
+    //        }
 
-        }
+    //    }
 
-        if ((Target - Left) < (Right - Target))
-        {
-            Console.WriteLine($"the most colse number is {Left}");
-        }
+    //    if ((Target - Left) < (Right - Target))
+    //    {
+    //        Console.WriteLine($"the most colse number is {Left}");
+    //    }
 
-        else if ((Target - Left) > (Right - Target))
-        {
-            Console.WriteLine($"the most colse number is {Right}");
-        }
-        else
-        {
+    //    else if ((Target - Left) > (Right - Target))
+    //    {
+    //        Console.WriteLine($"the most colse number is {Right}");
+    //    }
+    //    else
+    //    {
 
-            Console.WriteLine($"the Target is colse to both {Left} which is left and {Right} which is Right");
-        }
-    }
-    public static String Search(int Target, int[] SortedArrayOfNumbers)
-    {
+    //        Console.WriteLine($"the Target is colse to both {Left} which is left and {Right} which is Right");
+    //    }
+    //}
 
-        int High = SortedArrayOfNumbers.Count() - 1;
-        int Low = 0;
-        int Right = 0;
-        int Left = 0;
+    /**/
+    
+    //public static String Search(int Target, int[] SortedArrayOfNumbers)
+    //{
 
-        while (High >= Low)
-        {
-            int Mid = (Low + High) / 2;
+    //    int High = SortedArrayOfNumbers.Count() - 1;
+    //    int Low = 0;
+    //    int Right = 0;
+    //    int Left = 0;
 
-            if (Target == SortedArrayOfNumbers[Mid])
-            {
-                return Mid.ToString();
+    //    while (High >= Low)
+    //    {
+    //        int Mid = (Low + High) / 2;
 
-            }
-            else if (Target > SortedArrayOfNumbers[Mid])
-            {
-                Low = Mid + 1;
-                Left = SortedArrayOfNumbers[Mid];
-            }
-            else
-            {
-                High = Mid - 1;
-                Right = SortedArrayOfNumbers[Mid];
-            }
-        }
-        return null;
-    }
+    //        if (Target == SortedArrayOfNumbers[Mid])
+    //        {
+    //            return Mid.ToString();
+
+    //        }
+    //        else if (Target > SortedArrayOfNumbers[Mid])
+    //        {
+    //            Low = Mid + 1;
+    //            Left = SortedArrayOfNumbers[Mid];
+    //        }
+    //        else
+    //        {
+    //            High = Mid - 1;
+    //            Right = SortedArrayOfNumbers[Mid];
+    //        }
+    //    }
+    //    return null;
+    //}
 
 
     //  Binary Search
     //  Searches for a specific date if not fount return -1
     //  Right here is the next Transaction
+
     public static int DateSearchOrCloseTo(DateOnly Target, List<DateOnly> SortedArrayOfNumbers,out DateOnly Right)
     {
         int High = SortedArrayOfNumbers.Count() - 1;
@@ -123,7 +128,6 @@ public class Helper
     //  Left and Right here are the Books around the wanted book
     public static int BookSearchOrCloseTo(long Target, List<long> SortedArrayOfNumbers, out int Right, out int Left)
     {
-
 
         int High = SortedArrayOfNumbers.Count() - 1;
         int Low = 0;
@@ -166,48 +170,49 @@ public class Helper
     //  making List for Objects of Transaction
 
     public static List<Transaction> Transactions = new List<Transaction>();
-    public static void TransactionsJsonStreamReaderClass(String JsonFilePath)
-    {
-        using (var Reader = new StreamReader(JsonFilePath))
-        using (var jsonTextReader = new JsonTextReader(Reader))
-        {
-            while (jsonTextReader.Read())
-            {
-                Transaction transaction;
-                var Serializer = new JsonSerializer();
-                if (jsonTextReader.TokenType == JsonToken.StartObject)
-                {
-                    transaction = Serializer.Deserialize<Transaction>(jsonTextReader);               
-                    if (transaction != null)
-                        Transactions.Add(transaction);
-                }
-            }
-        }
-    }
+
+    //public static void TransactionsJsonStreamReaderClass(String JsonFilePath)
+    //{
+    //    using (var Reader = new StreamReader(JsonFilePath))
+    //    using (var jsonTextReader = new JsonTextReader(Reader))
+    //    {
+    //        while (jsonTextReader.Read())
+    //        {
+    //            Transaction transaction;
+    //            var Serializer = new JsonSerializer();
+    //            if (jsonTextReader.TokenType == JsonToken.StartObject)
+    //            {
+    //                transaction = Serializer.Deserialize<Transaction>(jsonTextReader);               
+    //                if (transaction != null)
+    //                    Transactions.Add(transaction);
+    //            }
+    //        }
+    //    }
+    //}
     //  making List for Objects of Book
 
     public static List<Book> Books = new List<Book>();
-    public static void BooksJsonStreamReaderClass(String JsonFilePath)
-    {
-        using (var Reader = new StreamReader(JsonFilePath))
-        using (var jsonTextReader = new JsonTextReader(Reader))
-        {
-            while (jsonTextReader.Read())
-            {
-                Book book;
-                var Serializer = new JsonSerializer();
-                if (jsonTextReader.TokenType == JsonToken.StartObject)
-                {
-                    book = Serializer.Deserialize<Book>(jsonTextReader);
-                    if (book != null)
-                        Books.Add(book);
-                }
+
+    //public static void BooksJsonStreamReaderClass(String JsonFilePath)
+    //{
+    //    using (var Reader = new StreamReader(JsonFilePath))
+    //    using (var jsonTextReader = new JsonTextReader(Reader))
+    //    {
+    //        while (jsonTextReader.Read())
+    //        {
+    //            Book book;
+    //            var Serializer = new JsonSerializer();
+    //            if (jsonTextReader.TokenType == JsonToken.StartObject)
+    //            {
+    //                book = Serializer.Deserialize<Book>(jsonTextReader);
+    //                if (book != null)
+    //                    Books.Add(book);
+    //            }
 
 
-            }
-        }
-    }
-
+    //        }
+    //    }
+    //}
 
 
     //  show all the Transactions availabe with full details 

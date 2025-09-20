@@ -9,24 +9,23 @@ internal class Program
     static void Main(string[] args)
     {
 
-        //  Reading Json File And deserializing it Using StreamReader
+        //  Reading Json File And deserializing it Using StreamReader+JsonReader
 
         //  for bank transactions
-        Helper.TransactionsJsonStreamReaderClass("bank_transactions.json");
+        LargJsonFileStreamReaderClass.NewList<Transaction>("bank_transactions.json",Helper.Transactions);
         //  for Library books
-        Helper.BooksJsonStreamReaderClass("library_books.json");
+        LargJsonFileStreamReaderClass.NewList<Book>("library_books.json",Helper.Books);
 
 
         //  Making list for Targeted attribute
 
         //  for bank transactions
-
         Transaction.MakingDateOnlyList(Helper.Transactions);
 
         //  for Library books
         Book.MakingISBN_List(Helper.Books);
 
-        //Book.MakingISBN_List(Helper.Books);
+        //  Book.MakingISBN_List(Helper.Books);
         while (true)
         {
             Console.Write("""
@@ -104,7 +103,6 @@ internal class Program
                         int LibraryChoise = Convert.ToInt32(Console.ReadLine());
                         switch (LibraryChoise)
                         {
-
                             case 1:
                                 {
                                     Helper.ShowBooks();
@@ -149,13 +147,6 @@ internal class Program
                                                 Console.WriteLine($"There is no book with this ISBN however it should be between {LeftBookISBN} and {RightBookISBN} ");
                                             }
                                         }
-                                        //check if the BookTarget is in the same form as ISBN
-
-
-
-
-
-
                                     }
                                     catch (Exception ex)
                                     {
@@ -164,14 +155,8 @@ internal class Program
                                     }
                                     break;
                                 }
-
-
-
                             default:
                                 { break; }
-
-
-
                         }
                         break;
                     }
